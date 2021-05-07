@@ -1,0 +1,46 @@
+exp-name: lung-simulated
+reads-dir: /fs/cbcb-lab/rob/students/jason/perplexity-wabi-backup/lung-simulated-data
+tx-path: /fs/cbcb-lab/rob/students/jason/shared/annotations/hg19.fa.gz
+
+# this is not real since first 5 samples have 1/2txs with fold changed tpms
+ground-truth-dir: /fs/cbcb-lab/rob/students/jason/rnaseq-data/output/copd/quants/
+prior-weights:
+  - 1e-2
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9 
+  - 10
+k: 5
+
+read_file_fmt: fasta
+sample-names:
+  - SRR1265495
+  - SRR1265496
+  - SRR1265497
+  - SRR1265498
+  - SRR1265499
+  - SRR1265500
+  - SRR1265501
+  - SRR1265502
+  - SRR1265503
+  - SRR1265504
+
+A:
+  - SRR1265495
+  - SRR1265496
+  - SRR1265497
+  - SRR1265498
+  - SRR1265499
+
+B:
+  - SRR1265500
+  - SRR1265501
+  - SRR1265502
+  - SRR1265503
+  - SRR1265504
